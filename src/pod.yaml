@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: conversao-temperatura
+  labels:
+    cor: conversao-temperatura
+spec:
+  containers:
+    - name: app
+      image: rodrigoengelberg/docker-conversao-temperatura:v1
+      ports:
+        - containerPort: 80
